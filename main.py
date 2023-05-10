@@ -9,4 +9,7 @@ def fibonacci(n):
 
 #vdc
 n = int(input("Digite um número:"))
-print(f"Fibonacci({n}) = {fibonacci(n)}")
+if n < 0:
+    print(ValueError('n tem que ser maior do que zero'))
+else:
+    print(f"Fibonacci({n}) = {fibonacci(n)}")
